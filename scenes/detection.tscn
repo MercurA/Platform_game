@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://gqyhjyoxeh03"]
+
+[ext_resource type="Script" path="res://scripts/Detection.gd" id="1_cefxm"]
+
+[node name="Detection" type="Area2D" groups=["detectors"]]
+collision_mask = 10
+script = ExtResource("1_cefxm")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

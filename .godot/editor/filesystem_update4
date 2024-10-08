@@ -1,0 +1,9 @@
+res://scenes/level_1.tscn
+res://scripts/traps.gd
+res://scenes/player.tscn
+res://scenes/traps/fire_trap.tscn
+res://scenes/traps/saw.tscn
+res://scenes/gui.tscn
+res://scenes/win_screen.tscn
+res://scenes/start_game.tscn
+res://scenes/character_selection.tscn

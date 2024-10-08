@@ -1,0 +1,61 @@
+[gd_scene load_steps=14 format=3 uid="uid://bdxnldcfd3erx"]
+
+[ext_resource type="PackedScene" uid="uid://cv01f3sa7jddq" path="res://scenes/level_1_map.tscn" id="1_cmx7n"]
+[ext_resource type="Script" path="res://scripts/level.gd" id="1_kw5pq"]
+[ext_resource type="PackedScene" uid="uid://bb5j7oosdje8m" path="res://scenes/player.tscn" id="2_f4xyw"]
+[ext_resource type="PackedScene" uid="uid://t8gnjv7ah6y5" path="res://scenes/start.tscn" id="2_xipbn"]
+[ext_resource type="PackedScene" uid="uid://by2eeshxighx5" path="res://scenes/collectables/orange.tscn" id="8_gv7k7"]
+[ext_resource type="PackedScene" uid="uid://b0u7wntupcfag" path="res://scenes/collectables/apple.tscn" id="8_mps3o"]
+[ext_resource type="PackedScene" uid="uid://dxt6hkuniwjnx" path="res://scenes/collectables/banana.tscn" id="10_g0j80"]
+[ext_resource type="PackedScene" uid="uid://ccig3skkuheb" path="res://scenes/collectables/cherry.tscn" id="11_peacd"]
+[ext_resource type="PackedScene" uid="uid://b7yk3v6svrft1" path="res://scenes/collectables/kiwi.tscn" id="12_ahiuc"]
+[ext_resource type="PackedScene" uid="uid://3mtgm4bgrdah" path="res://scenes/collectables/melon.tscn" id="13_6iycc"]
+[ext_resource type="PackedScene" uid="uid://drydgilwxsnn0" path="res://scenes/traps/fire_trap.tscn" id="13_p87wo"]
+[ext_resource type="PackedScene" uid="uid://c0mjcx4cspomm" path="res://scenes/collectables/pineapple.tscn" id="14_j732r"]
+[ext_resource type="PackedScene" uid="uid://crmcfin844nd1" path="res://scenes/ui_layer.tscn" id="15_ga35h"]
+
+[node name="Level1" type="Node2D"]
+script = ExtResource("1_kw5pq")
+level_time = 100
+
+[node name="Start" parent="." instance=ExtResource("2_xipbn")]
+position = Vector2(27, 492)
+
+[node name="Player" parent="." instance=ExtResource("2_f4xyw")]
+position = Vector2(71, 497)
+
+[node name="level_1_map" parent="." instance=ExtResource("1_cmx7n")]
+
+[node name="collectables" type="Node" parent="."]
+
+[node name="orange" parent="collectables" instance=ExtResource("8_gv7k7")]
+position = Vector2(169, 464)
+
+[node name="apple" parent="collectables" instance=ExtResource("8_mps3o")]
+position = Vector2(428, 464)
+
+[node name="Fruit" parent="collectables" instance=ExtResource("10_g0j80")]
+position = Vector2(463, 464)
+
+[node name="cherry" parent="collectables" instance=ExtResource("11_peacd")]
+position = Vector2(460, 433)
+
+[node name="kiwi" parent="collectables" instance=ExtResource("12_ahiuc")]
+position = Vector2(486, 432)
+
+[node name="melon" parent="collectables" instance=ExtResource("13_6iycc")]
+position = Vector2(432, 432)
+
+[node name="orange2" parent="collectables" instance=ExtResource("8_gv7k7")]
+position = Vector2(487, 462)
+
+[node name="pineapple" parent="collectables" instance=ExtResource("14_j732r")]
+position = Vector2(445, 488)
+
+[node name="traps" type="Node" parent="."]
+
+[node name="fire_trap" parent="traps" instance=ExtResource("13_p87wo")]
+position = Vector2(255, 513)
+fire_on = false
+
+[node name="UILayer" parent="." instance=ExtResource("15_ga35h")]

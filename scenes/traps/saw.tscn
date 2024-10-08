@@ -1,0 +1,85 @@
+[gd_scene load_steps=13 format=3 uid="uid://d4jt6owdpq5py"]
+
+[ext_resource type="Texture2D" uid="uid://6owmayl8dc7h" path="res://assets/Traps/Saw/On (38x38).png" id="1_4p06w"]
+[ext_resource type="Script" path="res://scripts/traps.gd" id="1_p8mhv"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_psdk6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lkfgh"]
+atlas = ExtResource("1_4p06w")
+region = Rect2(0, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fuj43"]
+atlas = ExtResource("1_4p06w")
+region = Rect2(38, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eyqaa"]
+atlas = ExtResource("1_4p06w")
+region = Rect2(76, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vg3g2"]
+atlas = ExtResource("1_4p06w")
+region = Rect2(114, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ynfx7"]
+atlas = ExtResource("1_4p06w")
+region = Rect2(152, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ff1q0"]
+atlas = ExtResource("1_4p06w")
+region = Rect2(190, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_64y31"]
+atlas = ExtResource("1_4p06w")
+region = Rect2(228, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ecv3c"]
+atlas = ExtResource("1_4p06w")
+region = Rect2(266, 0, 38, 38)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4nkyk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lkfgh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fuj43")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eyqaa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vg3g2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ynfx7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ff1q0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_64y31")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ecv3c")
+}],
+"loop": true,
+"name": &"default",
+"speed": 22.0
+}]
+
+[node name="Saw" type="Area2D" groups=["traps"]]
+collision_layer = 8
+collision_mask = 2
+script = ExtResource("1_p8mhv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_psdk6")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_4nkyk")
+autoplay = "default"
+frame_progress = 0.11638
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

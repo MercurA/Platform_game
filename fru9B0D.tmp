@@ -1,0 +1,143 @@
+[gd_scene load_steps=22 format=3 uid="uid://dxt6hkuniwjnx"]
+
+[ext_resource type="Script" path="res://scripts/Fruit.gd" id="1_e223f"]
+[ext_resource type="Texture2D" uid="uid://d0b3vk2tmq7uw" path="res://assets/Items/Fruits/Bananas.png" id="2_po85l"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ror86"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oxfa6"]
+atlas = ExtResource("2_po85l")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4t4hr"]
+atlas = ExtResource("2_po85l")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1pwug"]
+atlas = ExtResource("2_po85l")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_avqmd"]
+atlas = ExtResource("2_po85l")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ly24a"]
+atlas = ExtResource("2_po85l")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4erjd"]
+atlas = ExtResource("2_po85l")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8w0s1"]
+atlas = ExtResource("2_po85l")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4vpqt"]
+atlas = ExtResource("2_po85l")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sj48y"]
+atlas = ExtResource("2_po85l")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hdkwf"]
+atlas = ExtResource("2_po85l")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o1403"]
+atlas = ExtResource("2_po85l")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ufqh6"]
+atlas = ExtResource("2_po85l")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_34rqr"]
+atlas = ExtResource("2_po85l")
+region = Rect2(384, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5gk6e"]
+atlas = ExtResource("2_po85l")
+region = Rect2(416, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gpns8"]
+atlas = ExtResource("2_po85l")
+region = Rect2(448, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_06f63"]
+atlas = ExtResource("2_po85l")
+region = Rect2(480, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ndlx4"]
+atlas = ExtResource("2_po85l")
+region = Rect2(512, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lwex3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oxfa6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4t4hr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1pwug")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_avqmd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ly24a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4erjd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8w0s1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4vpqt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sj48y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hdkwf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o1403")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ufqh6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_34rqr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5gk6e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gpns8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_06f63")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ndlx4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 22.0
+}]
+
+[node name="Fruit" type="Area2D"]
+script = ExtResource("1_e223f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ror86")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_lwex3")
+frame_progress = 0.517113

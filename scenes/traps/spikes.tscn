@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://j8rnfxqeohm0"]
+
+[ext_resource type="Texture2D" uid="uid://ky4v8c4ocx4j" path="res://assets/Traps/Spikes/Idle.png" id="1_4t7mf"]
+[ext_resource type="Script" path="res://scripts/traps.gd" id="1_qgj8n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ktthh"]
+size = Vector2(13, 7)
+
+[node name="Spikes" type="Area2D" groups=["traps"]]
+collision_layer = 8
+collision_mask = 2
+script = ExtResource("1_qgj8n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -3.5)
+shape = SubResource("RectangleShape2D_ktthh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -8)
+texture = ExtResource("1_4t7mf")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
