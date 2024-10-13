@@ -20,6 +20,7 @@ func _process(delta):
 	if fire_on:
 		animated_sprite.play("fire_on")
 		collision_shape.disabled = false
+
 func _on_body_entered(body):
 	touched.emit()
 

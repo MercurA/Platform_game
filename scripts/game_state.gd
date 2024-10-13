@@ -5,7 +5,6 @@ var points: int = 0
 var lifes: int = 3
 
 var high_score = [
-	
 	{
 		"points": 14,
 		"name": 'aa'

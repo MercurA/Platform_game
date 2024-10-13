@@ -1,5 +1,5 @@
-Button
 ColorRect
+Button
 Label
 Timer
 CollisionShape2D

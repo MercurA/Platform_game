@@ -1,30 +1,30 @@
 [gd_scene load_steps=19 format=3 uid="uid://btjelkferjukl"]
 
-[ext_resource type="Script" path="res://scripts/hud.gd" id="1_56okg"]
-[ext_resource type="Texture2D" uid="uid://owm3eor1l4ta" path="res://assets/coins-chests-etc-2-0.png" id="1_ytpb7"]
+[ext_resource type="Script" path="res://scripts/hud.gd" id="1_psy7c"]
+[ext_resource type="Texture2D" uid="uid://owm3eor1l4ta" path="res://assets/coins-chests-etc-2-0.png" id="2_q4trc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8ton8"]
-atlas = ExtResource("1_ytpb7")
+atlas = ExtResource("2_q4trc")
 region = Rect2(400, 192, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uqttg"]
-atlas = ExtResource("1_ytpb7")
+atlas = ExtResource("2_q4trc")
 region = Rect2(416, 192, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6djtg"]
-atlas = ExtResource("1_ytpb7")
+atlas = ExtResource("2_q4trc")
 region = Rect2(432, 192, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kvucw"]
-atlas = ExtResource("1_ytpb7")
+atlas = ExtResource("2_q4trc")
 region = Rect2(448, 192, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ch1do"]
-atlas = ExtResource("1_ytpb7")
+atlas = ExtResource("2_q4trc")
 region = Rect2(464, 192, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jx6nr"]
-atlas = ExtResource("1_ytpb7")
+atlas = ExtResource("2_q4trc")
 region = Rect2(480, 192, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_gc4h2"]
@@ -54,35 +54,35 @@ animations = [{
 }]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_arls3"]
-atlas = ExtResource("1_ytpb7")
+atlas = ExtResource("2_q4trc")
 region = Rect2(624, 480, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_l3gxn"]
-atlas = ExtResource("1_ytpb7")
+atlas = ExtResource("2_q4trc")
 region = Rect2(176, 64, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ckk1e"]
-atlas = ExtResource("1_ytpb7")
+atlas = ExtResource("2_q4trc")
 region = Rect2(192, 64, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_od3lf"]
-atlas = ExtResource("1_ytpb7")
+atlas = ExtResource("2_q4trc")
 region = Rect2(208, 64, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lmlf5"]
-atlas = ExtResource("1_ytpb7")
+atlas = ExtResource("2_q4trc")
 region = Rect2(224, 64, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tnngd"]
-atlas = ExtResource("1_ytpb7")
+atlas = ExtResource("2_q4trc")
 region = Rect2(240, 64, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6e6xo"]
-atlas = ExtResource("1_ytpb7")
+atlas = ExtResource("2_q4trc")
 region = Rect2(256, 64, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_plc4b"]
-atlas = ExtResource("1_ytpb7")
+atlas = ExtResource("2_q4trc")
 region = Rect2(272, 64, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_36ywr"]
@@ -124,7 +124,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_56okg")
+script = ExtResource("1_psy7c")
 
 [node name="Time" type="Label" parent="."]
 layout_mode = 1
