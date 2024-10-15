@@ -1,13 +1,13 @@
-ColorRect
 Button
 Label
+Sprite2D
+ColorRect
 Timer
 CollisionShape2D
 Area2D
 AnimatedSprite2D
 Control
 CanvasLayer
-Sprite2D
 Node
 Marker2D
 AnimationPlayer
