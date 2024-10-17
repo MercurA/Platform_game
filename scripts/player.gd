@@ -3,13 +3,16 @@ class_name Player
 
 const SPEED = 300.0
 const JUMP_VELOCITY = 400.0
-@onready var animated_sprite = $AnimatedSprite2D
 
+@onready var animated_sprite = $AnimatedSprite2D
+var default_animations = State.default_animations
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func _ready():
-	animated_sprite.play('Idle')
+	State.set_animations(str(State.default_char_texture.id))
+	
+	animated_sprite.play(default_animations.idle)
 
 func _physics_process(delta):
 	if not is_on_floor():
@@ -37,14 +40,14 @@ func death() -> void:
 
 func handle_animation_states(direction: float) -> void:
 	if  Input.is_action_just_pressed("jump") and is_on_floor():
-		animated_sprite.play("Jump")
+		animated_sprite.play(default_animations.jump)
 	elif not is_on_floor():
-		animated_sprite.play("Fall")
+		animated_sprite.play(default_animations.fall)
 		
 	if direction:
-		animated_sprite.play("Run")
+		animated_sprite.play(default_animations.run)
 	elif is_on_floor():
-		animated_sprite.play("Idle")
+		animated_sprite.play(default_animations.idle)
 		
 	if direction == 1:
 		animated_sprite.flip_h = false

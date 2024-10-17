@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://crmcfin844nd1"]
 
-[ext_resource type="PackedScene" uid="uid://btjelkferjukl" path="res://scenes/hud.tscn" id="1_s3l1g"]
+[ext_resource type="PackedScene" uid="uid://btjelkferjukl" path="res://scenes/UI/hud.tscn" id="1_s3l1g"]
 
 [node name="UILayer" type="CanvasLayer"]
 

@@ -1,0 +1,73 @@
+[gd_scene load_steps=4 format=3 uid="uid://dumf1hx22jek5"]
+
+[ext_resource type="Script" path="res://scripts/character_selection.gd" id="1_5u56c"]
+[ext_resource type="Script" path="res://scripts/character_load.gd" id="2_d24qm"]
+[ext_resource type="Script" path="res://scripts/Start Game.gd" id="3_fip2o"]
+
+[node name="CharacterSelection" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5u56c")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.247444, 0.141101, 0.114841, 1)
+
+[node name="NavLeft" type="Button" parent="."]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 256.0
+offset_right = 192.0
+offset_bottom = 384.0
+text = "<"
+
+[node name="NavRight" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -192.0
+offset_top = -68.0
+offset_right = -128.0
+offset_bottom = 60.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 16
+text = ">"
+
+[node name="character" type="Sprite2D" parent="."]
+position = Vector2(576, 320)
+scale = Vector2(4, 4)
+script = ExtResource("2_d24qm")
+
+[node name="Start Game" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -160.0
+offset_top = -160.0
+offset_right = 163.0
+offset_bottom = -89.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Choose and Start"
+script = ExtResource("3_fip2o")
+
+[connection signal="load_texture" from="." to="character" method="_on_character_selection_load_texture"]
+[connection signal="pressed" from="NavLeft" to="." method="_on_nav_left_pressed"]
+[connection signal="pressed" from="NavRight" to="." method="_on_nav_right_pressed"]
+[connection signal="pressed" from="Start Game" to="." method="_on_start_game_pressed"]
