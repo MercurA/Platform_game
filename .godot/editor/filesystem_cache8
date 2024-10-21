@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1729009316
+::res://::1729521426
 icon.svg::CompressedTexture2D::1642183388982509013::1722452432::1722452441::1::::<><>::
 ::res://addons/::1728410387
 ::res://addons/godot-git-plugin/::1728410387
@@ -8,7 +8,7 @@ plugin.cfg::TextFile::-1::1728410387::0::1::::<><>::
 THIRDPARTY.md::TextFile::-1::1728410387::0::1::::<><>::
 ::res://addons/godot-git-plugin/linux/::1728410387
 ::res://addons/godot-git-plugin/macos/::1728410387
-::res://addons/godot-git-plugin/win64/::1729009313
+::res://addons/godot-git-plugin/win64/::1729521422
 ::res://assets/::1722710481
 20 Enemies.png::CompressedTexture2D::1649831060434260186::1722452734::1722452737::1::::<><>::
 coins-chests-etc-2-0.png::CompressedTexture2D::1028838960192578962::1722710233::1722710481::1::::<><>::
@@ -222,14 +222,13 @@ Idle.png::CompressedTexture2D::753233534636594511::1722452734::1722452737::1::::
 ::res://assets/Traps/Trampoline/::1722452737
 Idle.png::CompressedTexture2D::8954649279648795629::1722452734::1722452737::1::::<><>::
 Jump (28x28).png::CompressedTexture2D::5226677365799551694::1722452734::1722452737::1::::<><>::
-::res://scenes/::1728845008
+::res://scenes/::1729515539
 detection.tscn::PackedScene::455633324729335258::1722966379::0::1::::<><>::res://scripts/Detection.gd
 fan.tscn::PackedScene::3627908967526572565::1722631505::0::1::::<><>::res://scripts/fan.gd<>uid://b1enh03k0cvsf::::res://assets/Traps/Fan/On (24x8).png
 moving_platform.tscn::PackedScene::6701914247589348455::1722521674::0::1::::<><>::res://scripts/moving_platform.gd<>uid://cey40xqtbhj3v::::res://assets/Terrain/Terrain (16x16).png
-player.tscn::PackedScene::2519145216069151542::1728411446::0::1::::<><>::res://scripts/player.gd<>uid://br2d6w5vywxms::::res://assets/Main Characters/Pink Man/Idle (32x32).png<>uid://befq63lpl2uik::::res://assets/Main Characters/Pink Man/Jump (32x32).png<>uid://bu0f31jkujinx::::res://assets/Main Characters/Pink Man/Fall (32x32).png<>uid://jy8wwgkyod31::::res://assets/Main Characters/Pink Man/Run (32x32).png
-start.tscn::PackedScene::1402100518889239746::1728845008::0::1::::<><>::res://scripts/start.gd
+player.tscn::PackedScene::2519145216069151542::1729515539::0::1::::<><>::res://scripts/player.gd<>uid://br2d6w5vywxms::::res://assets/Main Characters/Pink Man/Idle (32x32).png<>uid://befq63lpl2uik::::res://assets/Main Characters/Pink Man/Jump (32x32).png<>uid://sa40w2xva8x4::::res://assets/Main Characters/Mask Dude/Fall (32x32).png<>uid://bu0f31jkujinx::::res://assets/Main Characters/Pink Man/Fall (32x32).png<>uid://ddg6jb7oka0aq::::res://assets/Main Characters/Ninja Frog/Fall (32x32).png<>uid://jy8wwgkyod31::::res://assets/Main Characters/Pink Man/Run (32x32).png<>uid://bn28kk5e13ut3::::res://assets/Main Characters/Virtual Guy/Fall (32x32).png<>uid://dol61jqv4q4u4::::res://assets/Main Characters/Mask Dude/Idle (32x32).png<>uid://c2c4xirxxmon0::::res://assets/Main Characters/Ninja Frog/Idle (32x32).png<>uid://k5pscy363u4q::::res://assets/Main Characters/Virtual Guy/Idle (32x32).png<>uid://blpfs6qyisww0::::res://assets/Main Characters/Mask Dude/Jump (32x32).png<>uid://w2rj3xapnxsi::::res://assets/Main Characters/Ninja Frog/Jump (32x32).png<>uid://bjqtmngywrmnf::::res://assets/Main Characters/Virtual Guy/Jump (32x32).png<>uid://cid7p4o168i5m::::res://assets/Main Characters/Mask Dude/Run (32x32).png<>uid://xdih1gbax2bi::::res://assets/Main Characters/Ninja Frog/Run (32x32).png<>uid://crev1nhfskftt::::res://assets/Main Characters/Virtual Guy/Run (32x32).png
+start.tscn::PackedScene::1402100518889239746::1729515538::0::1::::<><>::res://scripts/start.gd
 trampoline.tscn::PackedScene::7299480981992943455::1728831532::0::1::::<><>::res://scripts/trampoline.gd<>uid://cgp3u3fe4jve1::::res://assets/Traps/Trampoline/Jump (28x28).png
-win_screen.tscn::PackedScene::9009950863704940681::1728411446::0::1::::<><>::res://scripts/win_screen.gd
 ::res://scenes/collectables/::1722962732
 apple.tscn::PackedScene::4184412274043214426::1722962732::0::1::::<><>::res://scripts/collectable.gd<>uid://7dw2vibfgs3y::::res://assets/Items/Fruits/Collected.png<>uid://4n2vdq7r4tdm::::res://assets/Items/Fruits/Apple.png
 banana.tscn::PackedScene::8814723916146094917::1722962732::0::1::::<><>::res://scripts/collectable.gd<>uid://7dw2vibfgs3y::::res://assets/Items/Fruits/Collected.png<>uid://d0b3vk2tmq7uw::::res://assets/Items/Fruits/Bananas.png
@@ -238,31 +237,34 @@ kiwi.tscn::PackedScene::4682667070090438924::1722962732::0::1::::<><>::res://scr
 melon.tscn::PackedScene::1991225167673271131::1722962732::0::1::::<><>::res://scripts/collectable.gd<>uid://wg4xpru0153l::::res://assets/Items/Fruits/Melon.png<>uid://7dw2vibfgs3y::::res://assets/Items/Fruits/Collected.png
 orange.tscn::PackedScene::4126942098802061336::1722962732::0::1::::<><>::res://scripts/collectable.gd<>uid://4u0nkuoxh551::::res://assets/Items/Fruits/Orange.png<>uid://7dw2vibfgs3y::::res://assets/Items/Fruits/Collected.png
 pineapple.tscn::PackedScene::6552886268860349428::1722962732::0::1::::<><>::res://scripts/collectable.gd<>uid://irhnoosaofab::::res://assets/Items/Fruits/Pineapple.png<>uid://7dw2vibfgs3y::::res://assets/Items/Fruits/Collected.png
-::res://scenes/Levels/::1728845008
-level_1.tscn::PackedScene::2645277028481442073::1728845008::0::1::::<><>::res://scripts/level.gd<>uid://t8gnjv7ah6y5::::res://scenes/start.tscn<>uid://bb5j7oosdje8m::::res://scenes/player.tscn<>uid://cv01f3sa7jddq::::res://scenes/Levels/level_1_map.tscn<>uid://by2eeshxighx5::::res://scenes/collectables/orange.tscn<>uid://b0u7wntupcfag::::res://scenes/collectables/apple.tscn<>uid://dxt6hkuniwjnx::::res://scenes/collectables/banana.tscn<>uid://ccig3skkuheb::::res://scenes/collectables/cherry.tscn<>uid://b7yk3v6svrft1::::res://scenes/collectables/kiwi.tscn<>uid://3mtgm4bgrdah::::res://scenes/collectables/melon.tscn<>uid://c0mjcx4cspomm::::res://scenes/collectables/pineapple.tscn<>uid://drydgilwxsnn0::::res://scenes/traps/fire_trap.tscn<>uid://crmcfin844nd1::::res://scenes/UI/ui_layer.tscn
-level_1_map.tscn::PackedScene::6300005596921232714::1722631505::0::1::::<><>::uid://cey40xqtbhj3v::::res://assets/Terrain/Terrain (16x16).png
+::res://scenes/Levels/::1729515539
+level_1.tscn::PackedScene::2645277028481442073::1729515539::0::1::::<><>::res://scripts/level_1.gd<>uid://t8gnjv7ah6y5::::res://scenes/start.tscn<>uid://bb5j7oosdje8m::::res://scenes/player.tscn<>uid://cv01f3sa7jddq::::res://scenes/Levels/level_1_map.tscn<>uid://by2eeshxighx5::::res://scenes/collectables/orange.tscn<>uid://b0u7wntupcfag::::res://scenes/collectables/apple.tscn<>uid://dxt6hkuniwjnx::::res://scenes/collectables/banana.tscn<>uid://ccig3skkuheb::::res://scenes/collectables/cherry.tscn<>uid://b7yk3v6svrft1::::res://scenes/collectables/kiwi.tscn<>uid://3mtgm4bgrdah::::res://scenes/collectables/melon.tscn<>uid://c0mjcx4cspomm::::res://scenes/collectables/pineapple.tscn<>uid://drydgilwxsnn0::::res://scenes/traps/fire_trap.tscn<>uid://crmcfin844nd1::::res://scenes/UI/ui_layer.tscn
+level_1_map.tscn::PackedScene::6300005596921232714::1729157240::0::1::::<><>::uid://cey40xqtbhj3v::::res://assets/Terrain/Terrain (16x16).png
 ::res://scenes/traps/::1728411446
 fire_trap.tscn::PackedScene::8402210762975704839::1728411446::0::1::::<><>::res://scripts/traps.gd<>uid://ddwkldd535a8k::::res://assets/Traps/Fire/On (16x32).png<>uid://bm6a7w2e5xsdn::::res://assets/Traps/Fire/Off.png
 saw.tscn::PackedScene::9214527668312009438::1728411446::0::1::::<><>::uid://6owmayl8dc7h::::res://assets/Traps/Saw/On (38x38).png<>res://scripts/traps.gd
 spikes.tscn::PackedScene::700879761704180797::1722631505::0::1::::<><>::uid://ky4v8c4ocx4j::::res://assets/Traps/Spikes/Idle.png<>res://scripts/traps.gd
-::res://scenes/UI/::1728845140
-character_selection.tscn::PackedScene::8588161876951176602::1728845140::0::1::::<><>::res://scripts/character_selection.gd
-hud.tscn::PackedScene::3738851157468634183::1728845008::0::1::::<><>::res://scripts/hud.gd<>uid://owm3eor1l4ta::::res://assets/coins-chests-etc-2-0.png
-start_game.tscn::PackedScene::8455542805108813548::1728845008::0::1::::<><>::res://scripts/start_game.gd
-ui_layer.tscn::PackedScene::5990955047045063628::1728845008::0::1::::<><>::uid://btjelkferjukl::::res://scenes/UI/hud.tscn
-::res://scripts/::1728845140
-character_selection.gd::GDScript::-1::1728845140::0::1::::<>Control<>::
+::res://scenes/UI/::1729517218
+character_selection.tscn::PackedScene::8588161876951176602::1729515539::0::1::::<><>::res://scripts/character_selection.gd<>res://scripts/character_load.gd<>res://scripts/Start Game.gd
+hud.tscn::PackedScene::3738851157468634183::1729515538::0::1::::<><>::res://scripts/hud.gd<>uid://owm3eor1l4ta::::res://assets/coins-chests-etc-2-0.png
+start_game.tscn::PackedScene::8455542805108813548::1729515539::0::1::::<><>::res://scripts/start_game.gd
+ui_layer.tscn::PackedScene::5990955047045063628::1729515538::0::1::::<><>::uid://btjelkferjukl::::res://scenes/UI/hud.tscn
+win_screen.tscn::PackedScene::9009950863704940681::1729517218::0::1::::<><>::res://scripts/win_screen.gd
+::res://scripts/::1729517218
+character_load.gd::GDScript::-1::1729157240::0::1::::<>Sprite2D<>::
+character_selection.gd::GDScript::-1::1729157240::0::1::::<>Control<>::
 collectable.gd::GDScript::-1::1722711914::0::1::::<>Area2D<>::
 Detection.gd::GDScript::-1::1722966379::0::1::::<>Area2D<>::
 fan.gd::GDScript::-1::1722526603::0::1::::<>Area2D<>::
-game_state.gd::GDScript::-1::1728830754::0::1::::GameState<>Node<>::
+game_state.gd::GDScript::-1::1729506123::0::1::::GameState<>Node<>::
 hud.gd::GDScript::-1::1722961848::0::1::::<>Control<>::
-level.gd::GDScript::-1::1723049734::0::1::::<>Node2D<>::
+level_1.gd::GDScript::-1::1729509187::0::1::::<>Node2D<>::
 moving_platform.gd::GDScript::-1::1722461942::0::1::::<>Path2D<>::
 platform.gd::GDScript::-1::1722460665::0::1::::<>Node2D<>::
-player.gd::GDScript::-1::1722962760::0::1::::Player<>CharacterBody2D<>::
+player.gd::GDScript::-1::1729157240::0::1::::Player<>CharacterBody2D<>::
+Start Game.gd::GDScript::-1::1729157240::0::1::::<>Button<>::
 start.gd::GDScript::-1::1722540694::0::1::::<>Marker2D<>::
-start_game.gd::GDScript::-1::1728831518::0::1::::<>Control<>::
+start_game.gd::GDScript::-1::1729157240::0::1::::<>Control<>::
 trampoline.gd::GDScript::-1::1722540186::0::1::::<>Area2D<>::
-traps.gd::GDScript::-1::1728816078::0::1::::<>Area2D<>::
-win_screen.gd::GDScript::-1::1723049662::0::1::::<>Control<>::
+traps.gd::GDScript::-1::1729509026::0::1::::<>Area2D<>::
+win_screen.gd::GDScript::-1::1729517218::0::1::::<>Control<>::

@@ -784,6 +784,7 @@ shape = SubResource("RectangleShape2D_o4vyv")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_g85bx")
-animation = &"Run_4"
+animation = &"Run_1"
+frame_progress = 0.954961
 
 [node name="Camera2D" type="Camera2D" parent="."]

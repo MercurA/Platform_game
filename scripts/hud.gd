@@ -10,7 +10,7 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	life.text = str(State.get_life()) + " x "
 	points.text = "    : " + str(State.getPoints())
 

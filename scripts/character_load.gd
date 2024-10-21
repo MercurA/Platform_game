@@ -19,5 +19,5 @@ func _process(_delta):
 		print("Error: Could not load texture from: ", texture_path)
 
 
-func _on_character_selection_load_texture(texture):
-	default_texture = texture.path
+func _on_character_selection_load_texture(char_texture):
+	default_texture = char_texture.path
