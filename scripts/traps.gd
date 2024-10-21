@@ -13,7 +13,7 @@ func _ready():
 	if fire_on:
 		animated_sprite.play("fire_on")
 
-func _process(delta):
+func _process(_delta):
 	if not fire_on:
 		animated_sprite.play("fire_off")
 		collision_shape.disabled = true
@@ -21,7 +21,7 @@ func _process(delta):
 		animated_sprite.play("fire_on")
 		collision_shape.disabled = false
 
-func _on_body_entered(body):
+func _on_body_entered(_body):
 	touched.emit()
 
 func set_fire_state(state):
@@ -30,7 +30,6 @@ func set_fire_state(state):
 func _on_detection_body_entered(body):
 	if body is Player:
 		fire_on = true
-
 
 func _on_timer_timeout():
 	fire_on = !fire_on

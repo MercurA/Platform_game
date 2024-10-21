@@ -32,7 +32,7 @@ func _physics_process(delta):
 	move_and_slide()
 
 
-func jump(force: int) -> void:
+func jump(force: float) -> void:
 	velocity.y = -force
 
 func death() -> void:

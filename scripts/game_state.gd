@@ -1,6 +1,7 @@
 extends Node
 class_name GameState
 
+var current_level = 'level_1'
 var points: int = 0
 var lifes: int = 3
 var default_char_texture =  {
@@ -14,22 +15,22 @@ var default_animations = {
 	"fall": 'Fall_3'
 }
 var high_score = [
-	{
-		"points": 14,
-		"name": 'aa'
-	},
-	{
-		"points": 12,
-		"name": 'gg'
-	},
-	{
-		"points": 9,
-		"name": 'gg'
-	},
-	{
-		"points": 100,
-		"name": 'gg'
-	},
+	#{
+		#"points": 14,
+		#"name": 'aa'
+	#},
+	#{
+		#"points": 12,
+		#"name": 'gg'
+	#},
+	#{
+		#"points": 9,
+		#"name": 'gg'
+	#},
+	#{
+		#"points": 100,
+		#"name": 'gg'
+	#},
 ]
 
 func addPoints(amount: int) -> void:

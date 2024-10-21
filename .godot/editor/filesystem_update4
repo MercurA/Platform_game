@@ -1,13 +1,16 @@
-res://scenes/UI/character_selection.tscn
-res://scripts/traps.gd
-res://scripts/character_selection.gd
-res://scripts/character_load.gd
 res://scenes/UI/hud.tscn
+res://scripts/traps.gd
 res://scenes/start.tscn
 res://scenes/UI/ui_layer.tscn
 res://scenes/UI/start_game.tscn
 res://scenes/Levels/level_1.tscn
+res://scenes/player.tscn
+res://scenes/UI/win_screen.tscn
+res://scenes/UI/character_selection.tscn
+res://scripts/hud.gd
+res://scripts/win_screen.gd
+res://scripts/level_1.gd
+res://scripts/player.gd
+res://scripts/character_load.gd
 res://scripts/Start Game.gd
 res://scripts/game_state.gd
-res://scenes/player.tscn
-res://scripts/player.gd
