@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=3 uid="uid://lj4ja1ke8ijt"]
+
+[ext_resource type="Script" path="res://scripts/grabber.gd" id="1_ssw3g"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1cov3"]
+size = Vector2(6, 79)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5aqa2"]
+size = Vector2(6, 79)
+
+[sub_resource type="Curve2D" id="Curve2D_fbdcc"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 67, 0, 0, 0, 0, 0, -9)
+}
+point_count = 2
+
+[node name="Grabber" type="StaticBody2D" groups=["grabbers"]]
+script = ExtResource("1_ssw3g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 29.5)
+shape = SubResource("RectangleShape2D_1cov3")
+
+[node name="Detect" type="Area2D" parent="."]
+scale = Vector2(1.44, 1)
+collision_layer = 16
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Detect"]
+position = Vector2(0, 29.5)
+shape = SubResource("RectangleShape2D_5aqa2")
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("Curve2D_fbdcc")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2(0, 67)
+rotation = -1.5708
+rotates = false
+cubic_interp = false
+loop = false
+
+[connection signal="body_entered" from="Detect" to="." method="_on_detect_body_entered"]
+[connection signal="body_exited" from="Detect" to="." method="_on_detect_body_exited"]
